@@ -1,0 +1,9 @@
+name = "ExtraPlotThemes"
+uuid = "730e8c34-83b7-4cc2-9668-59f6a8134c7a"
+authors = ["Yuri <yurikonter@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+Glob = "c27321d9-0574-5035-807b-f59d2c89b15c"
+PlotThemes = "ccf2f8ad-2431-5c83-bf29-c5338b663b6a"
+PlotUtils = "995b91a9-d308-5afd-9ec6-746e21dbc043"
