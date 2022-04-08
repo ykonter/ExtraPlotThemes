@@ -11,21 +11,24 @@ const matlab_palette = [
 
 const _matlab = PlotTheme(Dict([
     :background => :white,
-    :framestyle => :box,
+    # :framestyle => :box,
     :grid => true,
     :gridalpha => 0.8,
     :linewidth => 2,
     :markerstrokewidth => 0,
-    :fontfamily => "Computer Modern",
+    # :fontfamily => "Computer Modern",
+    :fontfamily => "Sans Serif",
     :colorgradient => :viridis,
     :guidefontsize => 12,
     :titlefontsize => 12,
     :tickfontsize => 8,
     :palette => matlab_palette,
-    :minorgrid => true,
-    :minorticks => 5,
-    :gridlinewidth => 0.7,
+    # :minorgrid => true,
+    # :minorticks => 5,
+    # :gridlinewidth => 0.7,
     :minorgridalpha => 0.06])
 )
 
-add_theme(:matlab, _matlab)  # always add this line to add theme to library
+# add_theme(:matlab, _matlab)  # always add this line to add theme to library
+# PlotThemes.add_theme(:matlab, _matlab) # export :matlab
+PlotThemes._themes[:matlab] = _matlab  # this does not seem to work

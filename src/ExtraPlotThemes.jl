@@ -16,6 +16,10 @@ if isdir(themedir)
     themefiles = glob(themedir * "/*.jl")
     [include(themefile) for themefile in themefiles]  # load all jl files in themedir
 end
+
+# println(keys(PlotThemes._themes))
+PlotThemes._themes[:matlab] = _matlab  # it does work here though
+# println(keys(PlotThemes._themes))
 end
 
 # set_theme()
